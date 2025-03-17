@@ -3,18 +3,38 @@
 
 
 
-let numero = prompt("Ingresa un numero:");
-if (numero >= 0){
+let pais = prompt("Ingresa tu pais preferido:");
+let idioma = "";
 
-    alert("El numero es positivo")
-
+if (pais === "colombia") {
+    idioma = "español";
+} else if (pais === "estados unidos"){
+    idioma = "ingles";
+} else if (pais === "inglaterra"){
+    idioma = "ingles";
+} else if (pais === "canada"){
+    idioma = "ingles";
+} else if (pais === "francia"){
+    idioma = "frances";
+} else if (pais === "italia"){
+    idioma = "italiano";
+} else if (pais === "alemania"){
+    idioma = "aleman";
+} else if (pais === "china"){
+    idioma = "mandarin";
+} else if (pais === "japon"){
+    idioma = "japones";
+} else if (pais === "brasil"){
+    idioma = "portugues";
+} else if (pais === "turquia"){
+    idioma = "turko";
 } else {
 
-    alert("El numero es negativo")
+    console.log("no existe el pais");
 
 }
-console.log("Siguiente flujo");
 
+console.log("En " + pais + " se habla: " + idioma)
 
 
 
